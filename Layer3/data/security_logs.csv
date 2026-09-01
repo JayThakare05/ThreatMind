@@ -1,0 +1,6 @@
+event_time,client_ip,account,action,details,hostname
+2026-09-01T10:30:01Z,185.10.20.50,admin,AUTH_FAILURE,Failed login attempt,server-01
+2026-09-01T10:30:05Z,185.10.20.50,admin,AUTH_FAILURE,Failed login attempt,server-01
+2026-09-01T10:30:09Z,185.10.20.50,admin,AUTH_FAILURE,Failed login attempt,server-01
+2026-09-01T10:30:15Z,185.10.20.50,admin,AUTH_SUCCESS,Successful login,server-01
+2026-09-01T10:31:02Z,185.10.20.50,admin,PROCESS_EXEC,powershell.exe -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkA,server-01

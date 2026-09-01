@@ -1,0 +1,108 @@
+<Events>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" />
+      <EventID>4625</EventID>
+      <Version>0</Version>
+      <Level>0</Level>
+      <Task>12544</Task>
+      <Keywords>0x8010000000000000</Keywords>
+      <TimeCreated SystemTime="2026-09-01T10:30:01.000000Z" />
+      <EventRecordID>100001</EventRecordID>
+      <Channel>Security</Channel>
+      <Computer>server-01.corp.local</Computer>
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">admin</Data>
+      <Data Name="IpAddress">185.10.20.50</Data>
+      <Data Name="LogonType">3</Data>
+      <Data Name="Status">0xC000006D</Data>
+      <Data Name="SubStatus">0xC000006A</Data>
+    </EventData>
+  </Event>
+
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" />
+      <EventID>4625</EventID>
+      <Version>0</Version>
+      <Level>0</Level>
+      <Task>12544</Task>
+      <Keywords>0x8010000000000000</Keywords>
+      <TimeCreated SystemTime="2026-09-01T10:30:05.000000Z" />
+      <EventRecordID>100002</EventRecordID>
+      <Channel>Security</Channel>
+      <Computer>server-01.corp.local</Computer>
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">admin</Data>
+      <Data Name="IpAddress">185.10.20.50</Data>
+      <Data Name="LogonType">3</Data>
+      <Data Name="Status">0xC000006D</Data>
+      <Data Name="SubStatus">0xC000006A</Data>
+    </EventData>
+  </Event>
+
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" />
+      <EventID>4625</EventID>
+      <Version>0</Version>
+      <Level>0</Level>
+      <Task>12544</Task>
+      <Keywords>0x8010000000000000</Keywords>
+      <TimeCreated SystemTime="2026-09-01T10:30:09.000000Z" />
+      <EventRecordID>100003</EventRecordID>
+      <Channel>Security</Channel>
+      <Computer>server-01.corp.local</Computer>
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">admin</Data>
+      <Data Name="IpAddress">185.10.20.50</Data>
+      <Data Name="LogonType">3</Data>
+      <Data Name="Status">0xC000006D</Data>
+      <Data Name="SubStatus">0xC000006A</Data>
+    </EventData>
+  </Event>
+
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" />
+      <EventID>4624</EventID>
+      <Version>0</Version>
+      <Level>0</Level>
+      <Task>12544</Task>
+      <Keywords>0x8020000000000000</Keywords>
+      <TimeCreated SystemTime="2026-09-01T10:30:15.000000Z" />
+      <EventRecordID>100004</EventRecordID>
+      <Channel>Security</Channel>
+      <Computer>server-01.corp.local</Computer>
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">admin</Data>
+      <Data Name="IpAddress">185.10.20.50</Data>
+      <Data Name="LogonType">3</Data>
+    </EventData>
+  </Event>
+
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System>
+      <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-a5ba-3e3b0328c30d}" />
+      <EventID>4688</EventID>
+      <Version>1</Version>
+      <Level>0</Level>
+      <Task>13312</Task>
+      <Keywords>0x8020000000000000</Keywords>
+      <TimeCreated SystemTime="2026-09-01T10:31:02.000000Z" />
+      <EventRecordID>100005</EventRecordID>
+      <Channel>Security</Channel>
+      <Computer>server-01.corp.local</Computer>
+    </System>
+    <EventData>
+      <Data Name="SubjectUserName">admin</Data>
+      <Data Name="NewProcessName">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+      <Data Name="CommandLine">powershell.exe -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkA</Data>
+      <Data Name="ParentProcessName">C:\Windows\System32\cmd.exe</Data>
+    </EventData>
+  </Event>
+</Events>

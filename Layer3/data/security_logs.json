@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-09-01T10:30:01Z",
+    "source_ip": "185.10.20.50",
+    "username": "admin",
+    "event_type": "LOGIN_FAILED",
+    "message": "Failed login attempt",
+    "host": "server-01"
+  },
+  {
+    "timestamp": "2026-09-01T10:30:05Z",
+    "source_ip": "185.10.20.50",
+    "username": "admin",
+    "event_type": "LOGIN_FAILED",
+    "message": "Failed login attempt",
+    "host": "server-01"
+  },
+  {
+    "timestamp": "2026-09-01T10:30:09Z",
+    "source_ip": "185.10.20.50",
+    "username": "admin",
+    "event_type": "LOGIN_FAILED",
+    "message": "Failed login attempt",
+    "host": "server-01"
+  },
+  {
+    "timestamp": "2026-09-01T10:30:15Z",
+    "source_ip": "185.10.20.50",
+    "username": "admin",
+    "event_type": "LOGIN_SUCCESS",
+    "message": "Successful login",
+    "host": "server-01"
+  },
+  {
+    "timestamp": "2026-09-01T10:31:02Z",
+    "source_ip": "185.10.20.50",
+    "username": "admin",
+    "event_type": "POWERSHELL_EXECUTION",
+    "message": "powershell.exe -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkA",
+    "host": "server-01"
+  }
+]

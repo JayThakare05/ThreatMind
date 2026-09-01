@@ -1,0 +1,103 @@
+{
+  "techniques": [
+    {
+      "technique_id": "T1110",
+      "name": "Brute Force",
+      "tactic": "Credential Access",
+      "description": "Adversaries may use brute force techniques to gain access to accounts when passwords are unknown or when password hashes are obtained.",
+      "detection_rules": [
+        {
+          "rule_id": "BF-001",
+          "description": "Multiple failed authentication attempts from the same source",
+          "event_types": ["LOGIN_FAILED", "AUTH_FAILURE"],
+          "min_count": 3,
+          "window_minutes": 5,
+          "confidence": 0.90
+        }
+      ]
+    },
+    {
+      "technique_id": "T1078",
+      "name": "Valid Accounts",
+      "tactic": "Defense Evasion",
+      "description": "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion.",
+      "detection_rules": [
+        {
+          "rule_id": "VA-001",
+          "description": "Successful authentication following failed attempts",
+          "event_types_sequence": ["LOGIN_FAILED", "LOGIN_SUCCESS"],
+          "confidence": 0.80
+        },
+        {
+          "rule_id": "VA-002",
+          "description": "Successful authentication following failed attempts (alt)",
+          "event_types_sequence": ["AUTH_FAILURE", "AUTH_SUCCESS"],
+          "confidence": 0.80
+        }
+      ]
+    },
+    {
+      "technique_id": "T1059.001",
+      "name": "PowerShell",
+      "tactic": "Execution",
+      "description": "Adversaries may abuse PowerShell commands and scripts for execution.",
+      "detection_rules": [
+        {
+          "rule_id": "PS-001",
+          "description": "PowerShell execution detected",
+          "event_types": ["POWERSHELL_EXECUTION"],
+          "confidence": 0.85
+        },
+        {
+          "rule_id": "PS-002",
+          "description": "Encoded PowerShell command detected",
+          "event_types": ["POWERSHELL_EXECUTION", "PROCESS_EXEC"],
+          "command_patterns": ["-enc", "-encoded", "-e "],
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "technique_id": "T1059",
+      "name": "Command and Scripting Interpreter",
+      "tactic": "Execution",
+      "description": "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries.",
+      "detection_rules": [
+        {
+          "rule_id": "CSI-001",
+          "description": "Suspicious process execution",
+          "event_types": ["PROCESS_EXEC"],
+          "confidence": 0.70
+        }
+      ]
+    },
+    {
+      "technique_id": "T1071",
+      "name": "Application Layer Protocol",
+      "tactic": "Command and Control",
+      "description": "Adversaries may communicate using application layer protocols to avoid detection.",
+      "detection_rules": [
+        {
+          "rule_id": "ALP-001",
+          "description": "Suspicious outbound network connection",
+          "event_types": ["OUTBOUND_CONNECTION", "NETWORK_CONNECTION"],
+          "confidence": 0.70
+        }
+      ]
+    },
+    {
+      "technique_id": "T1027",
+      "name": "Obfuscated Files or Information",
+      "tactic": "Defense Evasion",
+      "description": "Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents.",
+      "detection_rules": [
+        {
+          "rule_id": "OFI-001",
+          "description": "Base64 encoded command detected",
+          "command_patterns": ["-enc", "-encoded", "base64"],
+          "confidence": 0.85
+        }
+      ]
+    }
+  ]
+}
